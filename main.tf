@@ -28,23 +28,4 @@ resource "azurerm_mssql_server" "ravi-sql-server" {
   administrator_login          = "adminusersql"
   administrator_login_password = "Abhi@123@123"
 }
-#sql server 2 resources
-resource "azurerm_mssql_server" "ravi-sql-server1" {
-  depends_on = [ azurerm_resource_group.rg ]
-  name                         = "abhiserver1234"
-  resource_group_name          = "rg_abhi"
-  location                     = "West US"
-  version                      = "12.0"
-  administrator_login          = "adminusersql"
-  administrator_login_password = "Abhi@123@123"
-}
-#sql server 3 resources
-resource "azurerm_mssql_server" "ravi-sql-server1" {
-  depends_on = [ azurerm_resource_group.rg ]
-  name                         = "abhiserver1234"
-  resource_group_name          = "rg_abhi"
-  location                     = "West US"
-  version                      = "12.0"
-  administrator_login          = "adminusersql"
-  administrator_login_password = "Abhi@123@123"
-}
+
