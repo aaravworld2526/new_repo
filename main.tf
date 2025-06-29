@@ -13,10 +13,7 @@ provider "azurerm" {
   subscription_id = "3a734e32-021d-4243-89ff-c3495e6aa4da"
 }
 
-# This Terraform configuration sets up Azure resources for a basic SQL Server deployment.
-# It specifies the required Terraform and provider versions, authenticates to Azure,
-# creates a resource group, and provisions an Azure SQL Server instance.
-# You can extend this configuration by adding databases, firewall rules, or other resources as needed.
+
 resource "azurerm_resource_group" "rg" {
   name     = "rg_abhi"
   location = "West US"
